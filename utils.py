@@ -52,11 +52,11 @@ def plot(title, data, xlabel="samples", ylabel="value"):
 
 
 def plot_with_local(title, data, xlabel="samples", ylabel="value", threshold=100):
-    from scipy.signal import argrelextrema
-
     plot_base(data, xlabel=xlabel, ylabel=ylabel)
     plt.title(title, fontsize=16)
     
+    from scipy.signal import argrelextrema
+
     for i in range(data.shape[1]):
         y = data.iloc[:, i].values
         x = data.index.values
