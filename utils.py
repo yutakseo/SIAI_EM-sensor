@@ -53,7 +53,6 @@ def plot(title, data, xlabel="samples", ylabel="value"):
 
 def plot_with_local(title, data, xlabel="samples", ylabel="value", threshold=100):
     from scipy.signal import argrelextrema
-    import numpy as np
 
     plot_base(data, xlabel=xlabel, ylabel=ylabel)
     plt.title(title, fontsize=16)
